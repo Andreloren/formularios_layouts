@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #bfd7e4;
+}
+
+body::before {
+  content: "";
+
+  position: absolute;
+  width: 1440px;
+  height: 465px;
+  top: 0;
+  z-index: -1;
+
+  background: #293241;
+  mix-blend-mode: normal;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+.my-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 90px;
+}
+
+.my-header svg {
+  margin: 40px 0 32px 0;
+}
+
+header h1 {
+  font-family: "Staatliches";
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #ffffff;
+}
+
+header p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.top-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  height: 133px;
+
+  background: #f67669;
+  border-radius: 20px 20px 0 0;
+  margin-top: 1px;
+
+  text-transform: uppercase;
+  font-family: "Staatliches";
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #ffffff;
+}
+
+form {
+  min-height: 300px;
+
+  border-radius: 0px 0px 20px 20px;
+
+  padding: 64px;
+  background: #ffffff;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: "Staatliches";
+  text-align: center;
+
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 8px;
+
+  color: #253b51;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.info-persons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.names {
+  display: flex;
+
+  margin-top: 4px;
+  gap: 22px;
+}
+
+.names > div {
+  width: 100%;
+}
+
+.input-name,
+.input-lastname,
+.email,
+.mentor,
+.feedback,
+.date {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 16px;
+}
+
+.mentor input {
+  width: 300px;
+}
+
+label {
+  margin-bottom: 8px;
+  margin-top: 16px;
+
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+}
+
+input {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 56px;
+}
+
+span {
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #77757c;
+}
+
+textarea {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 166px;
+}
+
+.check {
+  margin: 30px 0 6px 0;
+
+  position: relative;
+}
+
+.check label {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  margin: 0;
+}
+
+.check label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  display: block;
+}
+
+.check input {
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+}
+
+.check input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='-2 2 22 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%23F67669'/%3E%3C/svg%3E%0A");
+}
+
+.check input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.col-3 {
+  display: flex;
+  gap: 16px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 300px;
+}
+
+.col-3 > div:nth-child(2),
+.col-3 > div:nth-child(3) {
+  width: 140px;
+}
+
+#begin,
+#end {
+  padding: 0 20px;
+}
+
+#date {
+  padding: 0 50px;
+}
+
+button {
+  margin-top: 64px;
+  width: 100%;
+  height: 51px;
+
+  background: #f67669;
+  border-radius: 8px;
+  border: none;
+
+  font-family: "Staatliches";
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+button:hover {
+  background: #d84131;
+}

@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #efefef;
+}
+
+body::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 436px;
+  top: 0;
+  z-index: -1;
+
+  background: #535971;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  margin: 140px 0 58px 0;
+}
+
+header h1 {
+  font-family: "Staatliches";
+
+  font-size: 48px;
+  line-height: 60px;
+
+  margin-bottom: 18px;
+
+  color: #ffffff;
+}
+
+header p {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ffffff;
+
+  width: 417px;
+}
+
+form {
+  min-height: 300px;
+
+  border-radius: 20px 20px 0 0;
+  padding: 64px;
+
+  background: #ffffff;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+fieldset legend {
+  font-family: "Staatliches";
+
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+
+  color: #535971;
+}
+
+.info-persons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.names {
+  display: flex;
+  margin-top: 4px;
+
+  gap: 22px;
+}
+
+.names > div {
+  width: 100%;
+}
+
+.input-name,
+.input-lastname,
+.email-password,
+.mentor,
+.date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+label {
+  margin-bottom: 8px;
+  margin-top: 16px;
+
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+}
+
+span {
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #77757c;
+}
+
+input {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 56px;
+}
+
+.col-3 {
+  display: flex;
+  gap: 16px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 300px;
+}
+
+.col-3 > div:nth-child(2),
+.col-3 > div:nth-child(3) {
+  width: 140px;
+}
+
+h2 {
+  margin-top: 32px;
+
+  font-family: "Staatliches";
+  font-size: 20px;
+  line-height: 34px;
+
+  color: #535971;
+}
+
+.two {
+  margin-top: 16px;
+}
+
+.date label {
+  margin-top: 0;
+}
+
+#begin,
+#end,
+#begin-2,
+#end-2 {
+  padding: 0 20px;
+}
+
+#date,
+#date-2 {
+  padding: 0 50px;
+}
+
+footer {
+  background: #535971;
+
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 50px;
+
+  height: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .my-button {
+  width: 608px;
+  height: 56px;
+
+  background: #ff5374;
+  border-radius: 20px;
+  color: #ffffff;
+  border: none;
+
+  font-family: "Staatliches";
+  font-size: 20px;
+  line-height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 10px;
+
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+footer .my-button:hover {
+  background: #e1395a;
+}
